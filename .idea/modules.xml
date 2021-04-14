@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NBIOT_To_HuaWeiCloud_API.iml" filepath="$PROJECT_DIR$/.idea/NBIOT_To_HuaWeiCloud_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yimning.iml" filepath="$PROJECT_DIR$/yimning.iml" />
     </modules>
   </component>
 </project>
