@@ -1,7 +1,6 @@
 package com.yimning.entity.product;
 
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.QueryDeviceCapabilities;
 import lombok.Data;
 
 import java.util.List;
