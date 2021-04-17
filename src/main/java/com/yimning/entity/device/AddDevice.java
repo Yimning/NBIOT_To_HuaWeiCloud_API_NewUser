@@ -2,6 +2,8 @@ package com.yimning.entity.device;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class AddDevice {
     private String device_id;
@@ -12,4 +14,6 @@ public class AddDevice {
     private String description;
     private String gateway_id;
     private String app_id;
+    private Extension_info extension_info;
+    private List<Shadow> shadow;
 }
