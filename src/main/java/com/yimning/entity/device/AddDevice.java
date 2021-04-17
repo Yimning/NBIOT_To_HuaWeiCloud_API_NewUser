@@ -6,6 +6,8 @@ import java.util.List;
 
 @Data
 public class AddDevice {
+    private String project_id;
+
     private String device_id;
     private String device_name;
     private String node_id;
@@ -14,6 +16,6 @@ public class AddDevice {
     private String description;
     private String gateway_id;
     private String app_id;
-    private Extension_info extension_info;
-    private List<Shadow> shadow;
+    private ExtensionInfo extension_info;
+    private List<InitialDesired> shadow;
 }

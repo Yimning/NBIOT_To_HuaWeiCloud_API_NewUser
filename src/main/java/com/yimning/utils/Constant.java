@@ -129,27 +129,28 @@ public class Constant {
 
     /*
      * Device Management:
-     * 1. REGISTER_DEVICE_VERIFICATIONCODE
-     * 2. REGISTER_DEVICE_PASSWORD
-     * 3. MODIFY_DEVICE_INFO
-     * 4. QUERY_DEVICE_ACTIVATION_STATUS
-     * 5. DELETE_DIRECT_CONNECTED_DEVICE
-     * 6. DISCOVER_INDIRECT_CONNECTED_DEVICE
-     * 7. REMOVE_INDIRECT_CONNECTED_DEVICE
-     * 8. MODIFY_DEVICE_SHADOW
-     * 9. QUERY_DEVICE_SHADOW
-     * 10. QUERY_DEVICE_REALTIME_LOCATION
+     * 1. CREATE_DEVICE
+     * 2. QUERY_DEVICE_LIST
+     * 3. QUERY_DEVICE
+     * 4. MODIFY_DEVICE
+     * 5. DELETE_DEVICE
+     * 6. RESET_DEVICE_SECRET
+     * 7. FREEZE_DEVICE
+     * 8. UNFREEZE_DEVICE
      */
-    public static final String REGISTER_DEVICE_VERIFICATIONCODE = BASE_URL + "/iocm/app/reg/v1.1.0/deviceCredentials";
-    public static final String REGISTER_DEVICE_PASSWORD = BASE_URL + "/iocm/app/reg/v2.0.0/deviceCredentials";
-    public static final String MODIFY_DEVICE_INFO = BASE_URL + "/iocm/app/dm/v1.4.0/devices";
-    public static final String QUERY_DEVICE_ACTIVATION_STATUS = BASE_URL + "/iocm/app/reg/v1.1.0/deviceCredentials";
-    public static final String DELETE_DEVICE = BASE_URL + "/iocm/app/dm/v1.4.0/devices";
-    public static final String DELETE_SUB_DEVICE = BASE_URL + "/iocm/app/signaltrans/v1.1.0/devices/%s/services/%s/sendCommand";
-    public static final String MODIFY_DEVICE_SHADOW = BASE_URL + "/iocm/app/shadow/v1.5.0/devices";
-    public static final String QUERY_DEVICE_SHADOW = BASE_URL + "/iocm/app/shadow/v1.5.0/devices";
-    public static final String QUERY_DEVICE_REALTIME_LOCATION = BASE_URL + "/iocm/app/location/v1.1.0/queryDeviceRealtimeLocation";
-    
+    public static final String CREATE_DEVICE = IOTDM_BASE_URL + "/v5/iot/%s/devices";
+    public static final String QUERY_DEVICE_LIST = IOTDM_BASE_URL + "/v5/iot/%s/devices";
+    public static final String QUERY_DEVICE_INFO = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s";
+    public static final String MODIFY_DEVICE_INFO = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s";
+    public static final String DELETE_DEVICE = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s";
+    public static final String RESET_DEVICE_SECRET = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/action";
+    public static final String FREEZE_DEVICE = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/freeze";
+    public static final String UNFREEZE_DEVICE = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/unfreeze";
+
+
+
+
+
     /*
      * Batch Task:
      * 1. CREATE_BATCH_TASK

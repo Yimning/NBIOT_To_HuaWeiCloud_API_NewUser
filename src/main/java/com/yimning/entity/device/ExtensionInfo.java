@@ -9,7 +9,7 @@ import lombok.Data;
  * @create: 2021-04-17 21:01
  **/
 @Data
-public class Extension_info {
+public class ExtensionInfo {
     private String aaa;
     private int bbb;
 }

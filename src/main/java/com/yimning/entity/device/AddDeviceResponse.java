@@ -1,5 +1,6 @@
 package com.yimning.entity.device;
 
+import com.yimning.common.lang.HttpResponseResult;
 import lombok.Data;
 
 import java.util.List;
@@ -28,5 +29,6 @@ public class AddDeviceResponse {
     private String status;
     private String create_time;
     private List<TagV5DTO> tags;
-    private Extension_info extension_info;
+    private ExtensionInfo extension_info;
+    private HttpResponseResult httpResponseResult;
 }

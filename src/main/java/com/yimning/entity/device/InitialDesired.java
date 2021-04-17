@@ -9,7 +9,7 @@ import lombok.Data;
  * @create: 2021-04-17 21:01
  **/
 @Data
-public class Shadow {
+public class InitialDesired {
     private Desired desired;
     private String service_id;
 }
