@@ -17,7 +17,7 @@ import java.util.Map;
 
 public interface QueryProductListService {
     /** 
-     * @Description: 创建产品列表
+     * @Description: 查询产品列表
      */
     public QueryProductList QueryProductList(QueryProductList queryProductList) throws Exception ;
 
