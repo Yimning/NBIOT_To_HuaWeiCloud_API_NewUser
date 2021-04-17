@@ -54,14 +54,14 @@ public class HttpUtils {
 	private static CloseableHttpClient httpClient;
 
 	/**
-	 * Two-Way Authentication In the two-way authentication, the client needs: 
-	 * 1 Import your own certificate for server verification; 
-	 * 2 Import the CA certificate of the server, and use the CA certificate to verify the certificate sent by the server; 
+	 * Two-Way Authentication In the two-way authentication, the client needs:
+	 * 1 Import your own certificate for server verification;
+	 * 2 Import the CA certificate of the server, and use the CA certificate to verify the certificate sent by the server;
 	 * 3 Set the domain name to not verify (Non-commercial IoT platform, no use domain name access.)
-	 * 
+	 *
 	 * */
 	public void initSSLConfigForTwoWay() throws Exception {
-		
+
 		// 1 Import your own certificate
 		String demo_base_Path = System.getProperty("user.dir");
 		String selfcertpath = demo_base_Path + Constant.SELFCERTPATH;
@@ -92,36 +92,36 @@ public class HttpUtils {
 	}
 
 	/**
-	 * One-Way Authentication In the One-way authentication, the client needs: 
-	 * 1 Import the CA certificate of the server, and use the CA certificate to verify the certificate sent by the server; 
+	 * One-Way Authentication In the One-way authentication, the client needs:
+	 * 1 Import the CA certificate of the server, and use the CA certificate to verify the certificate sent by the server;
 	 * 2 Set the domain name to not verify (Non-commercial IoT platform, no use domain name access.)
 	 *
 	 * */
 	/*
 	 * public void initSSLConfigForOneWay() throws Exception {
-	 * 
-	 * // 1 Import the CA certificate of the server, 
-	 * KeyStore caCert = KeyStore.getInstance("jks"); 
+	 *
+	 * // 1 Import the CA certificate of the server,
+	 * KeyStore caCert = KeyStore.getInstance("jks");
 	 * caCert.load(new FileInputStream(TRUSTCAPATH), TRUSTCAPWD.toCharArray());
 	 * TrustManagerFactory tmf = TrustManagerFactory.getInstance("sunx509");
 	 * tmf.init(caCert);
-	 * 
-	 * SSLContext sc = SSLContext.getInstance("TLS"); 
+	 *
+	 * SSLContext sc = SSLContext.getInstance("TLS");
 	 * sc.init(null, tmf.getTrustManagers(), null);
-	 * 
+	 *
 	 * // 2 Set the domain name to not verify // (Non-commercial IoT platform,
-	 * no use domain name access generally.) 
+	 * no use domain name access generally.)
 	 * SSLSocketFactory ssf = new SSLSocketFactory(sc, SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
-	 * 
+	 *
 	 * //If the platform has already applied for a domain name which matches the
-	 * domain name in the certificate information, the certificate 
-	 * //domain name check can be enabled (open by default) 
+	 * domain name in the certificate information, the certificate
+	 * //domain name check can be enabled (open by default)
 	 * // SSLSocketFactory ssf = new SSLSocketFactory(sc);
-	 * 
+	 *
 	 * ClientConnectionManager ccm = this.getConnectionManager();
-	 * SchemeRegistry sr = ccm.getSchemeRegistry(); 
+	 * SchemeRegistry sr = ccm.getSchemeRegistry();
 	 * sr.register(new Scheme("https", 8743, ssf));
-	 * 
+	 *
 	 * httpClient = new DefaultHttpClient(ccm); }
 	 */
 
@@ -135,17 +135,17 @@ public class HttpUtils {
 
 		return executeHttpRequest(request);
 	}
-	
+
 	   public StreamClosedHttpResponse doPostMultipartFile(String url, Map<String, String> headerMap,
 	           File file) {
 	        HttpPost request = new HttpPost(url);
 	        addRequestHeader(request, headerMap);
-	        
+
 	        FileBody fileBody = new FileBody(file);
 	        // Content-Type:multipart/form-data; boundary=----WebKitFormBoundarypJTQXMOZ3dLEzJ4b
 	        HttpEntity reqEntity = (HttpEntity) MultipartEntityBuilder.create().addPart("file", fileBody).build();
 	        request.setEntity(reqEntity);
-	        
+
 	        return (StreamClosedHttpResponse) executeHttpRequest(request);
 	    }
 
@@ -178,7 +178,7 @@ public class HttpUtils {
 
 		return (StreamClosedHttpResponse) response;
 	}
-	
+
 	private List<NameValuePair> paramsConverter(Map<String, String> params) {
 		List<NameValuePair> nvps = new LinkedList<NameValuePair>();
 		Set<Map.Entry<String, String>> paramsSet = params.entrySet();
@@ -216,14 +216,14 @@ public class HttpUtils {
 
 		return executeHttpRequest(request);
 	}
-    
+
 	public HttpResponse doPut(String url, Map<String, String> headerMap) {
 		HttpPut request = new HttpPut(url);
 		addRequestHeader(request, headerMap);
-		
+
 		return executeHttpRequest(request);
 	}
-	
+
 	public StreamClosedHttpResponse doPutJsonGetStatusLine(String url, Map<String, String> headerMap,
 			String content) {
 		HttpResponse response = doPutJson(url, headerMap, content);
@@ -233,7 +233,7 @@ public class HttpUtils {
 
 		return (StreamClosedHttpResponse) response;
 	}
-	
+
 	public StreamClosedHttpResponse doPutGetStatusLine(String url, Map<String, String> headerMap) {
 		HttpResponse response = doPut(url, headerMap);
 		if (null == response) {
@@ -244,7 +244,7 @@ public class HttpUtils {
 	}
 
 	public HttpResponse doGetWithParas(String url,
-			Map<String, String> queryParams, Map<String, String> headerMap)
+			Map<String, String> headerMap , Map<String, String> queryParams)
 			throws Exception {
 		HttpGet request = new HttpGet();
 		addRequestHeader(request, headerMap);
@@ -267,7 +267,7 @@ public class HttpUtils {
 	}
 
 	public StreamClosedHttpResponse doGetWithParasGetStatusLine(String url,
-			Map<String, String> queryParams, Map<String, String> headerMap)
+			Map<String, String> headerMap , Map<String, String> queryParams)
 			throws Exception {
 		HttpResponse response = doGetWithParas(url, queryParams, headerMap);
 		if (null == response) {
@@ -277,12 +277,12 @@ public class HttpUtils {
 		return (StreamClosedHttpResponse) response;
 	}
 
-	public HttpResponse doDeleteWithParas(String url, 
-			Map<String, String> queryParams, Map<String, String> headerMap)
+	public HttpResponse doDeleteWithParas(String url,
+			 Map<String, String> headerMap,Map<String, String> queryParams)
 			throws Exception {
 		HttpDelete request = new HttpDelete(url);
 		addRequestHeader(request, headerMap);
-		
+
 		URIBuilder builder;
 		try {
 			builder = new URIBuilder(url);
@@ -290,7 +290,7 @@ public class HttpUtils {
 			System.out.printf("URISyntaxException: {}", e);
 			throw new Exception(e);
 		}
-		
+
 		if (queryParams != null && !queryParams.isEmpty()) {
 			builder.setParameters(paramsConverter(queryParams));
 		}
@@ -300,9 +300,9 @@ public class HttpUtils {
 	}
 
 	public StreamClosedHttpResponse doDeleteWithParasGetStatusLine(String url,
-			Map<String, String> queryParams, Map<String, String> headerMap)
+			Map<String, String>headerMap , Map<String, String> queryParams)
 			throws Exception {
-		HttpResponse response = doDeleteWithParas(url, queryParams, headerMap);
+		HttpResponse response = doDeleteWithParas(url,headerMap,queryParams);
 		if (null == response) {
 			System.out.println("The response body is null.");
 		}

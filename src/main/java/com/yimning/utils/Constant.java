@@ -120,7 +120,7 @@ public class Constant {
     public static final String QUERY_PRODUCT = IOTDM_BASE_URL + "/v5/iot/%s/products/%s";
     public static final String QUERY_PRODUCT_LIST = IOTDM_BASE_URL + "/v5/iot/%s/products";
     public static final String MODIFY_PRODUCT = IOTDM_BASE_URL + "/v5/iot/%s/products/%s";
-    public static final String DELETE_PRODUCT = IOTDM_BASE_URL + "/iocm/app/dm/v1.4.0/devices";
+    public static final String DELETE_PRODUCT = IOTDM_BASE_URL + "/v5/iot/%s/products/%s";
 
 
 
