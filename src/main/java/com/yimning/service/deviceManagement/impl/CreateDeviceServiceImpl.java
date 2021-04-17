@@ -1,22 +1,21 @@
-package com.yimning.service.deviceManagement;
+package com.yimning.service.deviceManagement.impl;
 
 import com.yimning.entity.device.AddDevice;
 import com.yimning.entity.device.AuthInfo;
-import com.yimning.service.apig.SignUtil;
 import com.yimning.utils.Constant;
 import com.yimning.utils.HttpUtils;
 import com.yimning.utils.JsonUtils;
 import com.yimning.utils.StreamClosedHttpResponse;
-import org.apache.http.client.methods.HttpRequestBase;
 
+import java.io.IOException;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CreateDeviceByAK {
-
-    public static void main(String[] args) throws NoSuchAlgorithmException, KeyManagementException {
+public class CreateDeviceServiceImpl {
+    public static void main(String[] args) throws KeyManagementException, NoSuchAlgorithmException, IOException {
+        String token = null;
         AddDevice addDevice = new AddDevice();
         AuthInfo authInfo = new AuthInfo();
 
@@ -33,18 +32,16 @@ public class CreateDeviceByAK {
 
         Map<String, String> headers = new HashMap<String, String>();
         headers.put("Content-Type", "application/json");
+        headers.put("X-Auth-Token", token);
 
         String project_id = "11111";
         String url = Constant.DEVICE_COMMAND_URL;
         url = String.format(url, project_id);
-
-        HttpRequestBase httpRequestBase = SignUtil.signRequest(url, "POST",  headers, JsonUtils.jsonObj2Sting(addDevice), null);
-
         HttpUtils httpUtils = new HttpUtils();
         httpUtils.initClient();
-
-        StreamClosedHttpResponse httpResponse = (StreamClosedHttpResponse)httpUtils.execute(httpRequestBase);
+        StreamClosedHttpResponse httpResponse = httpUtils.doPost(url, headers, JsonUtils.jsonObj2Sting(addDevice));
 
         System.out.println(httpResponse.getContent());
+
     }
 }

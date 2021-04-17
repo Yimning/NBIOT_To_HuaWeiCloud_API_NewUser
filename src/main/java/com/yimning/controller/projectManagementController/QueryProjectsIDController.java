@@ -1,17 +1,14 @@
-package com.yimning.controller.projectController;
-import com.yimning.entity.product.AddProduct;
+package com.yimning.controller.projectManagementController;
 import com.yimning.entity.project.ProjectsID;
-import com.yimning.service.project.QueryProjectsIDService;
+import com.yimning.service.projectManagement.QueryProjectsIDService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/project")
+@RequestMapping("/projectManagement")
 public class QueryProjectsIDController {
     @Autowired
     private QueryProjectsIDService queryProjectsIDService;

@@ -3,12 +3,9 @@ package com.yimning.service.productManagement.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
 import com.yimning.entity.product.*;
-import com.yimning.entity.project.Projects;
-import com.yimning.entity.project.ProjectsID;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.productManagement.CreateProductService;
-import com.yimning.service.project.QueryProjectsIDService;
-import com.yimning.service.project.impl.QueryProjectsIDServiceImpl;
+import com.yimning.service.projectManagement.QueryProjectsIDService;
 import com.yimning.utils.Constant;
 import com.yimning.utils.HttpUtils;
 import com.yimning.utils.JsonUtils;
@@ -17,8 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 @Service

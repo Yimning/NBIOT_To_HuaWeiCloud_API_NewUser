@@ -12,7 +12,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class QueryDeviceListByAK {
+public class QueryDeviceListByAKService {
 
     public static void main(String[] args) throws NoSuchAlgorithmException, KeyManagementException {
         String project_id = "23123";

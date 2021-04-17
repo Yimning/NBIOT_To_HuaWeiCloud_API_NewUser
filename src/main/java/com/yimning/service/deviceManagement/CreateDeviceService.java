@@ -13,7 +13,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CreateDevice {
+public class CreateDeviceService {
     public static void main(String[] args) throws KeyManagementException, NoSuchAlgorithmException, IOException {
         String token = null;
         AddDevice addDevice = new AddDevice();

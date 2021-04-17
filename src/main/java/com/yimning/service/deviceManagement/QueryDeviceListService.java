@@ -12,7 +12,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class QueryDeviceList {
+public class QueryDeviceListService {
 
     public static void main(String[] args) throws NoSuchAlgorithmException, KeyManagementException, IOException, URISyntaxException {
         String token = null;
