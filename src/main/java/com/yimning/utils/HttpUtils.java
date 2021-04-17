@@ -35,7 +35,19 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicNameValuePair;
 
-
+/** 
+* @Description:
+ * RESTful API（REST风格的网络接口）；
+   “资源”是REST架构或者说整个网络处理的核心。
+	 GET 用来获取资源，
+	 POST 用来新建资源（也可以用于更新资源），
+	 PUT 用来更新资源，
+	 DELETE 用来删除资源 
+* @Param:  
+* @return:  
+* @Author: Yimning
+* @Date: 2021/4/17 
+*/
 public class HttpUtils {
 	public final static String HTTPGET = "GET";
 
