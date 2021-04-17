@@ -38,7 +38,7 @@ public class QueryProductServiceImpl implements QueryProductService {
         Map paramsMap = TypeConversionUtils.getObjectToValMap(queryProduct, false);
         HttpUtils httpUtils = new HttpUtils();
         httpUtils.initClient();
-        StreamClosedHttpResponse httpResponse = httpUtils.doGet(url, header, paramsMap);
+        StreamClosedHttpResponse httpResponse = httpUtils.doGet(url, header, null);
 
         System.out.println(httpResponse.getStatusLine());
         System.out.println(httpResponse.getContent());
