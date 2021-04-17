@@ -7,6 +7,8 @@ import java.util.List;
 
 @Data
 public class AddProduct {
+     private String project_id;
+     private String product_id;
      private String name;
      private String device_type;
      private String protocol_type;
@@ -15,9 +17,7 @@ public class AddProduct {
      private String industry;
      private String description;
      private List<ServiceCapability> service_capabilities;
-     private String product_id;
      private String app_id;
      private HttpResponseResult httpResponseResult;
 
-     private String project_id;
 }
