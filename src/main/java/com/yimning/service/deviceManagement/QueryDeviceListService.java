@@ -1,6 +1,5 @@
 package com.yimning.service.deviceManagement;
 
-import com.yimning.service.deviceAccess.appAccessSecurity.Authentication;
 import com.yimning.utils.Constant;
 import com.yimning.utils.HttpUtils;
 import com.yimning.utils.StreamClosedHttpResponse;
