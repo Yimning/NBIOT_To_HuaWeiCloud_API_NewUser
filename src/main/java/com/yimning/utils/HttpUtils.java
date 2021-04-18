@@ -289,6 +289,8 @@ public class HttpUtils {
 		return (StreamClosedHttpResponse) response;
 	}
 
+
+
 	public HttpResponse doDeleteWithParas(String url,
 			 Map<String, String> headerMap,Map<String, String> queryParams)
 			throws Exception {
