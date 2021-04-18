@@ -7,5 +7,5 @@ public interface DeleteProductService {
     /**
      * @Description: 删除产品
      */
-    public HttpResponseResult DeleteProduct(DeleteProduct deleteProduct) throws Exception;
+    public HttpResponseResult deleteProduct(DeleteProduct deleteProduct) throws Exception;
 }

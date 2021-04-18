@@ -7,6 +7,6 @@ public interface ModifyProductService {
     /** 
      * @Description: 修改产品
      */
-    public ModifyProduct ModifyProduct(ModifyProduct modifyProduct) throws Exception ;
+    public ModifyProduct modifyProduct(ModifyProduct modifyProduct) throws Exception ;
 
 }

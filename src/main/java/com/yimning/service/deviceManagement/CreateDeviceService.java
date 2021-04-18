@@ -19,6 +19,6 @@ public interface CreateDeviceService {
     /** 
      * @Description: 创建设备
      */
-    public AddDeviceResponse CreateDevice(AddDevice addDevice) throws Exception ;
+    public AddDeviceResponse createDevice(AddDevice addDevice) throws Exception ;
 
 }

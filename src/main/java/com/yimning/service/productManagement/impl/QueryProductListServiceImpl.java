@@ -29,7 +29,7 @@ import java.util.Map;
 @Service
 public class QueryProductListServiceImpl implements QueryProductListService {
     @Override
-    public QueryProductList QueryProductList(QueryProductList queryProductList) throws Exception {
+    public QueryProductList queryProductList(QueryProductList queryProductList) throws Exception {
         String token = Authentication.getToken();
 
         String url = Constant.QUERY_PRODUCT_LIST;

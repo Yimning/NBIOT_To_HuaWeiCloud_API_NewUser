@@ -18,7 +18,7 @@ public class CreateDeviceController {
 
     @PostMapping("/createDevice")
     public AddDeviceResponse DeleteDevice(@RequestBody AddDevice addDevice) throws Exception {
-        AddDeviceResponse addDeviceResponse = createDeviceService.CreateDevice(addDevice);
+        AddDeviceResponse addDeviceResponse = createDeviceService.createDevice(addDevice);
         return addDeviceResponse;
     }
 

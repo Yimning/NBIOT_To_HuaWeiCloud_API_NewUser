@@ -7,6 +7,6 @@ public interface CreateProductService {
     /** 
      * @Description: 创建产品设备
      */
-    public HttpResponseResult CreateProduct(AddProduct addProduct) throws Exception ;
+    public HttpResponseResult createProduct(AddProduct addProduct) throws Exception ;
 
 }

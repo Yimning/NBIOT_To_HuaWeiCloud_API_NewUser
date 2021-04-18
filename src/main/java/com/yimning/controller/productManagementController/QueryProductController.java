@@ -15,7 +15,7 @@ public class QueryProductController {
 
     @PostMapping("/queryProduct")
     public QueryProduct QueryDevice(@RequestBody QueryProduct queryProduct)throws Exception {
-        queryProduct = queryProductService.QueryProduct(queryProduct);
+        queryProduct = queryProductService.queryProduct(queryProduct);
         return queryProduct;
     }
 }

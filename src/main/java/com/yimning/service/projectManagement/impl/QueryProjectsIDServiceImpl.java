@@ -15,7 +15,7 @@ import java.util.Map;
 public class QueryProjectsIDServiceImpl implements QueryProjectsIDService {
 
     @Override
-    public ProjectsID QueryProjectsID(ProjectsID projectsID) throws Exception {
+    public ProjectsID queryProjectsID(ProjectsID projectsID) throws Exception {
         String token = Authentication.getToken();
         HttpUtils httpUtils = new HttpUtils();
         httpUtils.initClient();

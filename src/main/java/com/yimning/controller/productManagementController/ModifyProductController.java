@@ -15,7 +15,7 @@ public class ModifyProductController {
 
     @PostMapping("/modifyProduct")
     public ModifyProduct QueryDevice(@RequestBody ModifyProduct modifyProduct)throws Exception {
-        modifyProduct = modifyProductService.ModifyProduct(modifyProduct);
+        modifyProduct = modifyProductService.modifyProduct(modifyProduct);
         return modifyProduct;
     }
 }

@@ -12,7 +12,7 @@ public class QueryProductListController {
 
     @GetMapping("/queryProductList")
     public QueryProductList QueryDevice(@ModelAttribute QueryProductList queryProductList)throws Exception {
-       queryProductList = queryProductListService.QueryProductList(queryProductList);
+       queryProductList = queryProductListService.queryProductList(queryProductList);
         return queryProductList;
     }
 }

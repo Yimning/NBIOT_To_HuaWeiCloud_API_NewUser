@@ -19,6 +19,6 @@ public interface QueryProductListService {
     /** 
      * @Description: 查询产品列表
      */
-    public QueryProductList QueryProductList(QueryProductList queryProductList) throws Exception ;
+    public QueryProductList queryProductList(QueryProductList queryProductList) throws Exception ;
 
 }

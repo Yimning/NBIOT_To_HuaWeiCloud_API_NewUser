@@ -25,7 +25,7 @@ import java.util.Map;
 @Service
 public class QueryProductServiceImpl implements QueryProductService {
     @Override
-    public QueryProduct QueryProduct(QueryProduct queryProduct) throws Exception {
+    public QueryProduct queryProduct(QueryProduct queryProduct) throws Exception {
         String token = Authentication.getToken();
 
         String url = Constant.QUERY_PRODUCT;

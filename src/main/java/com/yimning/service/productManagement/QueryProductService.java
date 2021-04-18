@@ -7,6 +7,6 @@ public interface QueryProductService {
     /** 
      * @Description: 查询产品
      */
-    public QueryProduct QueryProduct(QueryProduct queryProduct) throws Exception ;
+    public QueryProduct queryProduct(QueryProduct queryProduct) throws Exception ;
 
 }

@@ -16,7 +16,7 @@ public class CreateProductController {
 
     @PostMapping("/createProduct")
     public HttpResponseResult QueryDevice(@RequestBody AddProduct addProduct)throws Exception {
-        HttpResponseResult httpResponseResult = createProductService.CreateProduct(addProduct);
+        HttpResponseResult httpResponseResult = createProductService.createProduct(addProduct);
         return httpResponseResult;
     }
 }

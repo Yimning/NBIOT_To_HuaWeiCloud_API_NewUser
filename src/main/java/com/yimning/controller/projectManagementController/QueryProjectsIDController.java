@@ -15,7 +15,7 @@ public class QueryProjectsIDController {
 
     @PostMapping("/queryProjectsID")
     public ProjectsID QueryDevice(@RequestBody ProjectsID projectsID)throws Exception {
-        projectsID = queryProjectsIDService.QueryProjectsID(projectsID);
+        projectsID = queryProjectsIDService.queryProjectsID(projectsID);
         return projectsID;
     }
 }

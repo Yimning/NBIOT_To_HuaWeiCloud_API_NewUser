@@ -25,7 +25,7 @@ import java.util.Map;
 @Service
 public class DeleteProductServiceImpl implements DeleteProductService {
     @Override
-    public HttpResponseResult DeleteProduct(DeleteProduct deleteProduct) throws Exception {
+    public HttpResponseResult deleteProduct(DeleteProduct deleteProduct) throws Exception {
         String token = Authentication.getToken();
 
         String url = Constant.DELETE_PRODUCT;

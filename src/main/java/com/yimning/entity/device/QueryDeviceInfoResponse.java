@@ -7,12 +7,12 @@ import java.util.List;
 
 /**
  * @program: yimning
- * @description: 添加设备响应结果
+ * @description: 查询某个设备的响应结果
  * @author: Yimning
- * @create: 2021-04-17 21:07
+ * @create: 2021-04-18 17:17
  **/
 @Data
-public class AddDeviceResponse {
+public class QueryDeviceInfoResponse {
     private String app_id;
     private String app_name;
     private String device_id;
@@ -31,5 +31,4 @@ public class AddDeviceResponse {
     private List<TagV5DTO> tags;
     private ExtensionInfo extension_info;
     private HttpResponseResult httpResponseResult;
-
 }

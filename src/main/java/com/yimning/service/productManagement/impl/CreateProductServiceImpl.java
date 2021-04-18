@@ -22,7 +22,7 @@ public class CreateProductServiceImpl implements CreateProductService {
     private QueryProjectsIDService queryProjectsIDService;
 
     @Override
-    public HttpResponseResult CreateProduct(AddProduct addProduct) throws Exception {
+    public HttpResponseResult createProduct(AddProduct addProduct) throws Exception {
         String token = Authentication.getToken();
         HttpUtils httpUtils = new HttpUtils();
         httpUtils.initClient();

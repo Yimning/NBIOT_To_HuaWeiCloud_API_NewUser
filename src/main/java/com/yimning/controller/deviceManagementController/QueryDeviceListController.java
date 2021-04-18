@@ -3,7 +3,6 @@ package com.yimning.controller.deviceManagementController;
 
 import com.yimning.entity.device.QueryDeviceList;
 import com.yimning.entity.device.QueryDeviceListResponse;
-import com.yimning.entity.device.QueryDeviceList;
 import com.yimning.service.deviceManagement.QueryDeviceListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +15,7 @@ public class QueryDeviceListController {
 
     @GetMapping("/queryDeviceList")
     public QueryDeviceListResponse QueryDeviceList(@ModelAttribute("queryDeviceList") QueryDeviceList queryDeviceList) throws Exception {
-        QueryDeviceListResponse queryDeviceListResponse = queryDeviceListService.QueryDeviceList(queryDeviceList);
+        QueryDeviceListResponse queryDeviceListResponse = queryDeviceListService.queryDeviceList(queryDeviceList);
         return queryDeviceListResponse;
     }
 

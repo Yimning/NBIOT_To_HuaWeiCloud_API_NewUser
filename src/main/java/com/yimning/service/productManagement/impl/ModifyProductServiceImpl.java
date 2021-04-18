@@ -22,7 +22,7 @@ import java.util.Map;
 @Service
 public class ModifyProductServiceImpl implements ModifyProductService {
     @Override
-    public ModifyProduct ModifyProduct(ModifyProduct modifyProduct) throws Exception {
+    public ModifyProduct modifyProduct(ModifyProduct modifyProduct) throws Exception {
         String token = Authentication.getToken();
 
         String url = Constant.MODIFY_PRODUCT;

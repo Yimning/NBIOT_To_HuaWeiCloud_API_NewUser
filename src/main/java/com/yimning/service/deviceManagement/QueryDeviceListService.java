@@ -19,6 +19,6 @@ public interface QueryDeviceListService {
     /** 
      * @Description: 查询设备列表
      */
-    public QueryDeviceListResponse QueryDeviceList(QueryDeviceList queryDeviceList) throws Exception ;
+    public QueryDeviceListResponse queryDeviceList(QueryDeviceList queryDeviceList) throws Exception ;
 
 }

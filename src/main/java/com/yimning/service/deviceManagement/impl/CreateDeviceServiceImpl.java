@@ -23,7 +23,7 @@ import java.util.Map;
 @Service
 public class CreateDeviceServiceImpl implements CreateDeviceService {
     @Override
-    public AddDeviceResponse CreateDevice(AddDevice addDevice) throws Exception {
+    public AddDeviceResponse createDevice(AddDevice addDevice) throws Exception {
         String token = Authentication.getToken();
 //        AuthInfo authInfo = new AuthInfo();
 //
