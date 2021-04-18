@@ -11,8 +11,8 @@ public class DeleteProductController {
     @Autowired
     private DeleteProductService deleteProductService;
 
-    @GetMapping("/deleteProduct")
-    public HttpResponseResult QueryDevice(@ModelAttribute("deleteProduct") DeleteProduct deleteProduct)throws Exception {
+    @DeleteMapping("/deleteProduct")
+    public HttpResponseResult DeleteProduct(@RequestBody DeleteProduct deleteProduct)throws Exception {
         System.out.println(deleteProduct);
         HttpResponseResult httpResponseResult = deleteProductService.deleteProduct(deleteProduct);
         return httpResponseResult;

@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /** 
-* @Description: 查询产品  project_id不能为空
+* @Description: 更新产品  project_id不能为空
 * @Param:  
 * @return:  
 * @Author: Yimning
