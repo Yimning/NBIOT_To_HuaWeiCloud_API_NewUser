@@ -27,6 +27,8 @@ public class QueryDeviceListServiceImpl implements QueryDeviceListService {
         String url = Constant.QUERY_DEVICE_LIST;
         if (queryDeviceList.getProject_id() != null)
             url = String.format(url, queryDeviceList.getProject_id());
+        System.out.println(queryDeviceList);
+        System.out.println(url);
         Map<String, String> header = new HashMap<String, String>();
         header.put("Content-Type", Constant.Content_Type);
         header.put("X-Auth-Token", token);

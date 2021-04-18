@@ -15,7 +15,7 @@ public class QueryDeviceListController {
     private QueryDeviceListService queryDeviceListService;
 
     @GetMapping("/queryDeviceList")
-    public QueryDeviceListResponse DeleteDevice(@ModelAttribute QueryDeviceList queryDeviceList) throws Exception {
+    public QueryDeviceListResponse QueryDeviceList(@ModelAttribute("queryDeviceList") QueryDeviceList queryDeviceList) throws Exception {
         QueryDeviceListResponse queryDeviceListResponse = queryDeviceListService.QueryDeviceList(queryDeviceList);
         return queryDeviceListResponse;
     }

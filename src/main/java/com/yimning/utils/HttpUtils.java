@@ -281,7 +281,7 @@ public class HttpUtils {
 	public StreamClosedHttpResponse doGetWithParasGetStatusLine(String url,
 			Map<String, String> headerMap , Map<String, String> queryParams)
 			throws Exception {
-		HttpResponse response = doGetWithParas(url, queryParams, headerMap);
+		HttpResponse response = doGetWithParas(url, headerMap, queryParams);
 		if (null == response) {
 			System.out.println("The response body is null.");
 		}
