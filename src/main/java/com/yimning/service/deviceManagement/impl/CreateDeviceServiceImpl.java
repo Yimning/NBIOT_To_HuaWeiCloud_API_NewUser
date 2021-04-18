@@ -4,8 +4,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
 import com.yimning.entity.device.AddDevice;
 import com.yimning.entity.device.AddDeviceResponse;
-import com.yimning.entity.device.AuthInfo;
-import com.yimning.entity.project.ProjectsID;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.deviceManagement.CreateDeviceService;
 import com.yimning.utils.Constant;
@@ -14,9 +12,6 @@ import com.yimning.utils.JsonUtils;
 import com.yimning.utils.StreamClosedHttpResponse;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -47,7 +42,7 @@ public class CreateDeviceServiceImpl implements CreateDeviceService {
             url = String.format(url, addDevice.getProject_id());
         HttpUtils httpUtils = new HttpUtils();
         httpUtils.initClient();
-        StreamClosedHttpResponse httpResponse = httpUtils.doPostJsonGetStatusLine(url, headers, JsonUtils.jsonObj2Sting(addDevice));
+        StreamClosedHttpResponse httpResponse = httpUtils.doPostJsonGetStatusLine(url, headers, JsonUtils.jsonObj2String(addDevice));
 
         System.out.println(httpResponse.getStatusLine());
         System.out.println(httpResponse.getContent());

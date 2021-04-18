@@ -35,7 +35,7 @@ public class ModifyProductServiceImpl implements ModifyProductService {
         //Map paramsMap = TypeConversionUtils.getObjectToValMap(modifyProduct, false);
         HttpUtils httpUtils = new HttpUtils();
         httpUtils.initClient();
-        String jsonRequest = JsonUtils.jsonObj2Sting(modifyProduct);
+        String jsonRequest = JsonUtils.jsonObj2String(modifyProduct);
         StreamClosedHttpResponse httpResponse = httpUtils.doPutJsonGetStatusLine(url, header, jsonRequest);
 
         System.out.println(httpResponse.getStatusLine());

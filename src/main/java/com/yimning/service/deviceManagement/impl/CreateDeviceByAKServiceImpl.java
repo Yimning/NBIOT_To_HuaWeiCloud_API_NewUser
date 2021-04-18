@@ -38,7 +38,7 @@ public class CreateDeviceByAKServiceImpl {
         String url = Constant.DEVICE_COMMAND_URL;
         url = String.format(url, project_id);
 
-        HttpRequestBase httpRequestBase = SignUtil.signRequest(url, "POST",  headers, JsonUtils.jsonObj2Sting(addDevice), null);
+        HttpRequestBase httpRequestBase = SignUtil.signRequest(url, "POST",  headers, JsonUtils.jsonObj2String(addDevice), null);
 
         HttpUtils httpUtils = new HttpUtils();
         httpUtils.initClient();

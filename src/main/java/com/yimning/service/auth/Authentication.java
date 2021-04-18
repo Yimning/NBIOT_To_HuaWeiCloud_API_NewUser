@@ -89,7 +89,7 @@ public class Authentication {
         header.put("Content-Type", "application/json;charset=utf8");
         StreamClosedHttpResponse httpResponse = null;
         try {
-            httpResponse = httpUtils.doPost(Constant.TOKEN_ACCESS_URL, header, JsonUtils.jsonObj2Sting(accessTokenDTO));
+            httpResponse = httpUtils.doPost(Constant.TOKEN_ACCESS_URL, header, JsonUtils.jsonObj2String(accessTokenDTO));
         } catch (Exception exception) {
             System.err.println("please check your network.");
             return null;

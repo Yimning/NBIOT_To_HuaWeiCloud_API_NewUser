@@ -36,7 +36,7 @@ public class CreateProductServiceImpl implements CreateProductService {
         header.put("Content-Type", "application/json");
         header.put("X-Auth-Token", token);
         System.out.println(header);
-        StreamClosedHttpResponse httpResponse = httpUtils.doPost(url, header, JsonUtils.jsonObj2Sting(addProduct));
+        StreamClosedHttpResponse httpResponse = httpUtils.doPost(url, header, JsonUtils.jsonObj2String(addProduct));
 
         System.out.println(httpResponse.getStatusLine());
         System.out.println(httpResponse.getContent());

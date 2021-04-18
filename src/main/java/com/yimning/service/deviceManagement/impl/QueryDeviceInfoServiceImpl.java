@@ -28,9 +28,6 @@ public class QueryDeviceInfoServiceImpl implements QueryDeviceInfoService {
         header.put("Content-Type", Constant.Content_Type);
         header.put("X-Auth-Token", token);
 
-//        Map<String, String> params = new HashMap<String, String>();
-//        //params.put("gateway_id", "5e09f371334dd4f337056da0_gaoshang_001");
-//        params.put("node_id", "gaoshang_001");
         Map paramsMap = TypeConversionUtils.getObjectToValMap(queryDeviceInfo, false);
 
         HttpUtils httpUtils = new HttpUtils();

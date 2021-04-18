@@ -45,7 +45,7 @@ public class JsonUtils {
      * @param jsonObj
      * @return
      */
-    public static String jsonObj2Sting(Object jsonObj) {
+    public static String jsonObj2String(Object jsonObj) {
         String jsonString = null;
 
         try {

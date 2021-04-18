@@ -108,7 +108,7 @@ public class CreateProductByAKServiceImpl {
         Map<String, String> header = new HashMap<String, String>();
         header.put("Content-Type", "application/json");
 
-        HttpRequestBase httpRequestBase = SignUtil.signRequest(url, "POST", header, JsonUtils.jsonObj2Sting(addProduct), null);
+        HttpRequestBase httpRequestBase = SignUtil.signRequest(url, "POST", header, JsonUtils.jsonObj2String(addProduct), null);
 
         StreamClosedHttpResponse httpResponse = (StreamClosedHttpResponse)httpUtils.execute(httpRequestBase);
 
