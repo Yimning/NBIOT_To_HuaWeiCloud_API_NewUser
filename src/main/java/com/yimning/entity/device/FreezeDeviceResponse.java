@@ -4,12 +4,12 @@ import lombok.Data;
 
 /**
  * @program: yimning
- * @description: 重置设备密钥请求参数
+ * @description: 冻结设备请求参数
  * @author: Yimning
  * @create: 2021-04-18 20:48
  **/
 @Data
-public class ResetDeviceSecret {
+public class FreezeDeviceResponse {
 
     String project_id;
     String device_id;

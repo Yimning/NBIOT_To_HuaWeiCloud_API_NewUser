@@ -1,5 +1,6 @@
 package com.yimning.entity.device;
 
+import com.yimning.common.lang.HttpResponseResult;
 import lombok.Data;
 
 /**
@@ -10,5 +11,7 @@ import lombok.Data;
  **/
 @Data
 public class ResetDeviceSecretResponse {
-
+    private String device_id;
+    private String secret;
+    private HttpResponseResult httpResponseResult;
 }

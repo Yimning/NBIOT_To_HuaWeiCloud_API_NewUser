@@ -2,10 +2,12 @@ package com.yimning.service.deviceManagement;
 
 import com.yimning.common.lang.HttpResponseResult;
 import com.yimning.entity.device.DeleteDevice;
+import com.yimning.entity.device.ResetDeviceSecret;
+import com.yimning.entity.device.ResetDeviceSecretResponse;
 
 public interface ResetDeviceSecretService {
     /**
-     * @Description: 删除设备
+     * @Description: 重置设备密钥
      */
-    public HttpResponseResult deleteDevice(DeleteDevice deleteDevice) throws Exception;
+    public ResetDeviceSecretResponse resetDeviceSecret(ResetDeviceSecret resetDeviceSecret) throws Exception;
 }
