@@ -1,6 +1,6 @@
 package com.yimning.controller.productManagementController;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.product.DeleteProduct;
+import com.yimning.entity.productManagement.DeleteProduct;
 import com.yimning.service.productManagement.DeleteProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

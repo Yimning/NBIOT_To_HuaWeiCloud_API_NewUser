@@ -1,8 +1,8 @@
 package com.yimning.controller.deviceManagementController;
 
 
-import com.yimning.entity.device.ResetDeviceSecret;
-import com.yimning.entity.device.ResetDeviceSecretResponse;
+import com.yimning.entity.deviceManagement.ResetDeviceSecret;
+import com.yimning.entity.deviceManagement.ResetDeviceSecretResponse;
 import com.yimning.service.deviceManagement.ResetDeviceSecretService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,5 +1,5 @@
 package com.yimning.controller.productManagementController;
-import com.yimning.entity.product.QueryProduct;
+import com.yimning.entity.productManagement.QueryProduct;
 import com.yimning.service.productManagement.QueryProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

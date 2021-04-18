@@ -2,8 +2,8 @@ package com.yimning.service.deviceManagement.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.device.UpdateDeviceInfo;
-import com.yimning.entity.device.UpdateDeviceInfoResponse;
+import com.yimning.entity.deviceManagement.UpdateDeviceInfo;
+import com.yimning.entity.deviceManagement.UpdateDeviceInfoResponse;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.deviceManagement.UpdateDeviceInfoService;
 import com.yimning.utils.*;

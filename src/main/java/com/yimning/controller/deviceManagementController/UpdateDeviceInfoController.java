@@ -1,8 +1,8 @@
 package com.yimning.controller.deviceManagementController;
 
 
-import com.yimning.entity.device.UpdateDeviceInfo;
-import com.yimning.entity.device.UpdateDeviceInfoResponse;
+import com.yimning.entity.deviceManagement.UpdateDeviceInfo;
+import com.yimning.entity.deviceManagement.UpdateDeviceInfoResponse;
 import com.yimning.service.deviceManagement.UpdateDeviceInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

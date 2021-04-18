@@ -1,7 +1,7 @@
 package com.yimning.service.productManagement;
 
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.product.*;
+import com.yimning.entity.productManagement.*;
 
 public interface CreateProductService {
     /** 

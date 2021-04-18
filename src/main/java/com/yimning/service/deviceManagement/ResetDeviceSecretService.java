@@ -1,9 +1,7 @@
 package com.yimning.service.deviceManagement;
 
-import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.device.DeleteDevice;
-import com.yimning.entity.device.ResetDeviceSecret;
-import com.yimning.entity.device.ResetDeviceSecretResponse;
+import com.yimning.entity.deviceManagement.ResetDeviceSecret;
+import com.yimning.entity.deviceManagement.ResetDeviceSecretResponse;
 
 public interface ResetDeviceSecretService {
     /**

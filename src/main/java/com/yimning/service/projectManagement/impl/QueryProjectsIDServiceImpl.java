@@ -2,7 +2,7 @@ package com.yimning.service.projectManagement.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.project.ProjectsID;
+import com.yimning.entity.projectManagement.ProjectsID;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.projectManagement.QueryProjectsIDService;
 import com.yimning.utils.*;

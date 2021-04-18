@@ -1,7 +1,7 @@
 package com.yimning.service.deviceManagement.impl;
 
-import com.yimning.entity.device.AddDevice;
-import com.yimning.entity.device.AuthInfo;
+import com.yimning.entity.deviceManagement.AddDevice;
+import com.yimning.entity.deviceManagement.AuthInfo;
 import com.yimning.service.apig.SignUtil;
 import com.yimning.utils.Constant;
 import com.yimning.utils.HttpUtils;

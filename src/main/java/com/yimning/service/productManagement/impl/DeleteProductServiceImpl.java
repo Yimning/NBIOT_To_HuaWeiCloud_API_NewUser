@@ -2,14 +2,12 @@ package com.yimning.service.productManagement.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.product.DeleteProduct;
+import com.yimning.entity.productManagement.DeleteProduct;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.productManagement.DeleteProductService;
 import com.yimning.utils.Constant;
 import com.yimning.utils.HttpUtils;
 import com.yimning.utils.StreamClosedHttpResponse;
-import com.yimning.utils.TypeConversionUtils;
-import org.apache.http.HttpResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

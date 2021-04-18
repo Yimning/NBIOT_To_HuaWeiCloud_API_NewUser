@@ -2,7 +2,7 @@ package com.yimning.controller.deviceManagementController;
 
 
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.device.FreezeDevice;
+import com.yimning.entity.deviceManagement.FreezeDevice;
 import com.yimning.service.deviceManagement.FreezeDeviceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

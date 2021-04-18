@@ -1,19 +1,7 @@
 package com.yimning.service.deviceManagement;
 
-import com.yimning.entity.device.AddDevice;
-import com.yimning.entity.device.AddDeviceResponse;
-import com.yimning.entity.device.QueryDeviceList;
-import com.yimning.entity.device.QueryDeviceListResponse;
-import com.yimning.utils.Constant;
-import com.yimning.utils.HttpUtils;
-import com.yimning.utils.StreamClosedHttpResponse;
-
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
-import java.util.HashMap;
-import java.util.Map;
+import com.yimning.entity.deviceManagement.QueryDeviceList;
+import com.yimning.entity.deviceManagement.QueryDeviceListResponse;
 
 public interface QueryDeviceListService {
     /** 

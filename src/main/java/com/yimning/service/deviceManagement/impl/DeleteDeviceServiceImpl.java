@@ -2,7 +2,7 @@ package com.yimning.service.deviceManagement.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.device.DeleteDevice;
+import com.yimning.entity.deviceManagement.DeleteDevice;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.deviceManagement.DeleteDeviceService;
 import com.yimning.utils.Constant;

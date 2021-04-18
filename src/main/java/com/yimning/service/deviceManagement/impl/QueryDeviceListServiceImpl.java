@@ -2,8 +2,8 @@ package com.yimning.service.deviceManagement.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.device.QueryDeviceList;
-import com.yimning.entity.device.QueryDeviceListResponse;
+import com.yimning.entity.deviceManagement.QueryDeviceList;
+import com.yimning.entity.deviceManagement.QueryDeviceListResponse;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.deviceManagement.QueryDeviceListService;
 import com.yimning.utils.Constant;
@@ -12,10 +12,6 @@ import com.yimning.utils.StreamClosedHttpResponse;
 import com.yimning.utils.TypeConversionUtils;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 @Service

@@ -1,8 +1,8 @@
 package com.yimning.controller.deviceManagementController;
 
 
-import com.yimning.entity.device.QueryDeviceInfo;
-import com.yimning.entity.device.QueryDeviceInfoResponse;
+import com.yimning.entity.deviceManagement.QueryDeviceInfo;
+import com.yimning.entity.deviceManagement.QueryDeviceInfoResponse;
 import com.yimning.service.deviceManagement.QueryDeviceInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

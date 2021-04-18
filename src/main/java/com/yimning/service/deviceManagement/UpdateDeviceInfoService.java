@@ -1,7 +1,7 @@
 package com.yimning.service.deviceManagement;
 
-import com.yimning.entity.device.UpdateDeviceInfo;
-import com.yimning.entity.device.UpdateDeviceInfoResponse;
+import com.yimning.entity.deviceManagement.UpdateDeviceInfo;
+import com.yimning.entity.deviceManagement.UpdateDeviceInfoResponse;
 
 public interface UpdateDeviceInfoService {
     /** 

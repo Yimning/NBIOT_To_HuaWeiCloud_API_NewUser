@@ -3,7 +3,7 @@ package com.yimning.service.productManagement.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.product.ModifyProduct;
+import com.yimning.entity.productManagement.ModifyProduct;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.productManagement.ModifyProductService;
 import com.yimning.utils.*;

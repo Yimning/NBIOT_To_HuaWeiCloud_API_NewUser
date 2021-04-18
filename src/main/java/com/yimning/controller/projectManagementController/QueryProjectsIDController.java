@@ -1,5 +1,5 @@
 package com.yimning.controller.projectManagementController;
-import com.yimning.entity.project.ProjectsID;
+import com.yimning.entity.projectManagement.ProjectsID;
 import com.yimning.service.projectManagement.QueryProjectsIDService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

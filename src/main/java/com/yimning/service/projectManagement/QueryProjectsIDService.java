@@ -1,6 +1,6 @@
 package com.yimning.service.projectManagement;
 
-import com.yimning.entity.project.ProjectsID;
+import com.yimning.entity.projectManagement.ProjectsID;
 
 public interface QueryProjectsIDService {
     /** 

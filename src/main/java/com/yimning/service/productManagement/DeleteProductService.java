@@ -1,7 +1,7 @@
 package com.yimning.service.productManagement;
 
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.product.DeleteProduct;
+import com.yimning.entity.productManagement.DeleteProduct;
 
 public interface DeleteProductService {
     /**

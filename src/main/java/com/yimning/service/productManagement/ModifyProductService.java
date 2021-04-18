@@ -1,7 +1,7 @@
 package com.yimning.service.productManagement;
 
 
-import com.yimning.entity.product.ModifyProduct;
+import com.yimning.entity.productManagement.ModifyProduct;
 
 public interface ModifyProductService {
     /** 

@@ -1,8 +1,8 @@
 package com.yimning.controller.deviceManagementController;
 
 
-import com.yimning.entity.device.AddDevice;
-import com.yimning.entity.device.AddDeviceResponse;
+import com.yimning.entity.deviceManagement.AddDevice;
+import com.yimning.entity.deviceManagement.AddDeviceResponse;
 import com.yimning.service.deviceManagement.CreateDeviceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

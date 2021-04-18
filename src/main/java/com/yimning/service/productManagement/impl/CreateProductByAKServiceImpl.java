@@ -1,6 +1,6 @@
 package com.yimning.service.productManagement.impl;
 
-import com.yimning.entity.product.*;
+import com.yimning.entity.productManagement.*;
 import com.yimning.service.apig.SignUtil;
 import com.yimning.utils.Constant;
 import com.yimning.utils.HttpUtils;

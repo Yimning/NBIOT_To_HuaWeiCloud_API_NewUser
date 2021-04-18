@@ -2,10 +2,8 @@ package com.yimning.service.deviceManagement.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.device.FreezeDevice;
-import com.yimning.entity.device.UnFreezeDevice;
+import com.yimning.entity.deviceManagement.UnFreezeDevice;
 import com.yimning.service.auth.Authentication;
-import com.yimning.service.deviceManagement.FreezeDeviceService;
 import com.yimning.service.deviceManagement.UnFreezeDeviceService;
 import com.yimning.utils.Constant;
 import com.yimning.utils.HttpUtils;

@@ -1,6 +1,6 @@
 package com.yimning.controller.productManagementController;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.product.AddProduct;
+import com.yimning.entity.productManagement.AddProduct;
 import com.yimning.service.productManagement.CreateProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

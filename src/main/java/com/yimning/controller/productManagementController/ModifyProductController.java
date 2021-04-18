@@ -1,5 +1,5 @@
 package com.yimning.controller.productManagementController;
-import com.yimning.entity.product.ModifyProduct;
+import com.yimning.entity.productManagement.ModifyProduct;
 import com.yimning.service.productManagement.ModifyProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

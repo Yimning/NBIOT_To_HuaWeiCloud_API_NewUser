@@ -1,7 +1,7 @@
 package com.yimning.service.productManagement;
 
 
-import com.yimning.entity.product.QueryProduct;
+import com.yimning.entity.productManagement.QueryProduct;
 
 public interface QueryProductService {
     /** 

@@ -2,8 +2,8 @@ package com.yimning.service.deviceManagement.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yimning.common.lang.HttpResponseResult;
-import com.yimning.entity.device.ResetDeviceSecret;
-import com.yimning.entity.device.ResetDeviceSecretResponse;
+import com.yimning.entity.deviceManagement.ResetDeviceSecret;
+import com.yimning.entity.deviceManagement.ResetDeviceSecretResponse;
 import com.yimning.service.auth.Authentication;
 import com.yimning.service.deviceManagement.ResetDeviceSecretService;
 import com.yimning.utils.Constant;
