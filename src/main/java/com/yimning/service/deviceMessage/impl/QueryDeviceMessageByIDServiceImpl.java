@@ -35,7 +35,7 @@ public class QueryDeviceMessageByIDServiceImpl implements QueryDeviceMessageByID
         String token = Authentication.getToken();
         String url = Constant.QUERY_DEVICE_MESSAGE_BY_MESSAGEID;
         if (queryDeviceMessageByID.getProject_id() != null && queryDeviceMessageByID.getDevice_id() != null && queryDeviceMessageByID.getMessage_id() != null)
-            url = String.format(url, queryDeviceMessageByID.getProject_id(), queryDeviceMessageByID.getDevice_id(),queryDeviceMessageByID.getMessage_id());
+            url = String.format(url, queryDeviceMessageByID.getProject_id(), queryDeviceMessageByID.getDevice_id(), queryDeviceMessageByID.getMessage_id());
 
         Map<String, String> header = new HashMap<String, String>();
         header.put("Content-Type", "application/json");
@@ -51,11 +51,10 @@ public class QueryDeviceMessageByIDServiceImpl implements QueryDeviceMessageByID
 
         if (httpResponse.getStatusLine().getStatusCode() != 200) {
             httpResponseResult = JSONObject.parseObject(httpResponse.getContent(), HttpResponseResult.class);
-        } else {
+        } else if (httpResponse.getContent() != null) {
             queryDeviceMessageByIDResponse = JSONObject.parseObject(httpResponse.getContent(), QueryDeviceMessageByIDResponse.class);
         }
         httpResponseResult.setStatus_code(httpResponse.getStatusLine().getStatusCode());
-        httpResponseResult.setReason_phrase(httpResponse.getStatusLine().getReasonPhrase());
         queryDeviceMessageByIDResponse.setHttpResponseResult(httpResponseResult);
         return queryDeviceMessageByIDResponse;
     }
