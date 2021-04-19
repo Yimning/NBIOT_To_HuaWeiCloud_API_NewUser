@@ -124,9 +124,6 @@ public class Constant {
 
 
 
-
-
-
     /*
      * Device Management:
      * 1. CREATE_DEVICE
@@ -146,6 +143,17 @@ public class Constant {
     public static final String RESET_DEVICE_SECRET = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/action";
     public static final String FREEZE_DEVICE = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/freeze";
     public static final String UNFREEZE_DEVICE = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/unfreeze";
+
+    /*
+     * Device Message:
+     * 1. ISSUE_DEVICE_MESSAGE
+     * 2. QUERY_DEVICE_MESSAGE_LIST
+     * 3. QUERY_DEVICE_MESSAGE_BY_MESSAGEID
+     */
+    public static final String ISSUE_DEVICE_MESSAGE = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/messages";
+    public static final String QUERY_DEVICE_MESSAGE_LIST = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/messages";
+    public static final String QUERY_DEVICE_MESSAGE_BY_MESSAGEID = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/messages/%s";
+
 
 
 
