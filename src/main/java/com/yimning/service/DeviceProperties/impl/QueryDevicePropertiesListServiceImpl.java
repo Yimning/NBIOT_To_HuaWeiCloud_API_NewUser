@@ -29,7 +29,7 @@ public class QueryDevicePropertiesListServiceImpl implements QueryDeviceProperti
         headers.put("Content-Type", Constant.Content_Type);
         headers.put("X-Auth-Token", token);
 
-        String url = Constant.RESET_DEVICE_SECRET;
+        String url = Constant.QUERY_DEVICE_PROPERTIES_LIST;
         String service_id_default = "resetSecret";
         if (queryDevicePropertiesList.getProject_id() != null && queryDevicePropertiesList.getDevice_id() != null)
             url = String.format(url, queryDevicePropertiesList.getProject_id(), queryDevicePropertiesList.getDevice_id());
@@ -41,6 +41,8 @@ public class QueryDevicePropertiesListServiceImpl implements QueryDeviceProperti
         }
         if (queryDevicePropertiesList.getService_id() != null)
             url = url + "?service_id=" + queryDevicePropertiesList.getService_id();
+
+
         HttpUtils httpUtils = new HttpUtils();
         httpUtils.initClient();
         Map paramsMap = TypeConversionUtils.getObjectToValMap(queryDevicePropertiesList, false);

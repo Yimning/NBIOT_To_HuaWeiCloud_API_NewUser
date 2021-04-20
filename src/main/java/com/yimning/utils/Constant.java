@@ -168,10 +168,10 @@ public class Constant {
     /*
      * Device Properties :
      * 1. QUERY_DEVICE_PROPERTIES_LIST
-     * 2. QUERY_DEVICE_PROPERTIES
+     * 2. UPDATE_DEVICE_PROPERTIES
      */
     public static final String QUERY_DEVICE_PROPERTIES_LIST = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/properties";
-    public static final String QUERY_DEVICE_PROPERTIES = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/properties";
+    public static final String UPDATE_DEVICE_PROPERTIES = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/properties";
 
 
 
