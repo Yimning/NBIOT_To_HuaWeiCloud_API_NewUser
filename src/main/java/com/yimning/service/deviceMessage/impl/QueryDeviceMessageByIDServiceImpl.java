@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  *  
  *
- * @Description: 查询某个设备消息的列表  project_id不能为空
+ * @Description: 查询某个设备消息 project_id不能为空
  * @Param:  
  * @return:  
  * @Author: Yimning
