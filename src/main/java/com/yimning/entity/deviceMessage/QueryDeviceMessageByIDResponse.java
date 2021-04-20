@@ -1,5 +1,6 @@
 package com.yimning.entity.deviceMessage;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.yimning.common.lang.HttpResponseResult;
 import lombok.Data;
 
@@ -15,7 +16,8 @@ import java.util.List;
 public class QueryDeviceMessageByIDResponse {
     private String message_id;
     private String name;
-    private String message;
+    //@JsonIgnore
+    private Message message;
     private String topic;
     private String status;
     private String created_time;

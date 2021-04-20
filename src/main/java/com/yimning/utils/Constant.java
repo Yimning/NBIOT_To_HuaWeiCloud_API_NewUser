@@ -71,6 +71,7 @@ public class Constant {
 
 
     //Paths of certificates.
+    public static String PROJECT_FILE_PATH = System.getProperty("user.dir");
     public static String SELFCERTPATH = "/src/main/resources/cert/outgoing.CertwithKey.pkcs12";
     public static String TRUSTCAPATH = "/src/main/resources/cert/ca.jks";
 
@@ -153,6 +154,16 @@ public class Constant {
     public static final String ISSUE_DEVICE_MESSAGE = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/messages";
     public static final String QUERY_DEVICE_MESSAGE_LIST = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/messages";
     public static final String QUERY_DEVICE_MESSAGE_BY_MESSAGEID = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/messages/%s";
+
+    /*
+     * Device Command :
+     * 1. CREATE_ISSUE_SYNC_DEVICE_COMMAND
+     * 2. CREATE_ISSUE_ASYNC_DEVICE_COMMAND
+     * 3. QUERY_DEVICE_ASYNC_COMMAND_BY_COMMANDID
+     */
+    public static final String CREATE_ISSUE_SYNC_DEVICE_COMMAND = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/commands";
+    public static final String CREATE_ISSUE_ASYNC_DEVICE_COMMAND = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/async-commands";
+    public static final String QUERY_DEVICE_ASYNC_COMMAND_BY_COMMANDID = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/async-commands/%s";
 
 
 

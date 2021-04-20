@@ -17,7 +17,8 @@ public class QueryDeviceMessageListController {
     private QueryDeviceMessageListService queryDeviceMessageListService;
 
     @GetMapping("/queryDeviceMessageList")
-    public QueryDeviceMessageListResponse QueryDeviceMessageList(@ModelAttribute("QueryDeviceMessageList") QueryDeviceMessageList queryDeviceMessageList) throws Exception {
+    public QueryDeviceMessageListResponse QueryDeviceMessageList(@ModelAttribute("queryDeviceMessageList") QueryDeviceMessageList queryDeviceMessageList) throws Exception {
+        System.out.println(queryDeviceMessageList);
         QueryDeviceMessageListResponse queryDeviceMessageListResponse = queryDeviceMessageListService.queryDeviceMessageList(queryDeviceMessageList);
         return queryDeviceMessageListResponse;
     }

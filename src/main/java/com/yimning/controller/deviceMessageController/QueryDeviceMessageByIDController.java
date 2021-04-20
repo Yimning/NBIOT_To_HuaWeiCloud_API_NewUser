@@ -17,7 +17,8 @@ public class QueryDeviceMessageByIDController {
     private QueryDeviceMessageByIDService queryDeviceMessageByIDService;
 
     @GetMapping("/queryDeviceMessageByID")
-    public QueryDeviceMessageByIDResponse QueryDeviceMessageByID(@ModelAttribute("QueryDeviceMessageByID") QueryDeviceMessageByID queryDeviceMessageByID) throws Exception {
+    public QueryDeviceMessageByIDResponse QueryDeviceMessageByID(@ModelAttribute("queryDeviceMessageByID") QueryDeviceMessageByID queryDeviceMessageByID) throws Exception {
+        System.out.println(queryDeviceMessageByID);
         QueryDeviceMessageByIDResponse queryDeviceMessageByIDResponse = queryDeviceMessageByIDService.queryDeviceMessageByID(queryDeviceMessageByID);
         return queryDeviceMessageByIDResponse;
     }

@@ -6,14 +6,10 @@ import lombok.Data;
  * @program: yimning
  * @description:
  * @author: Yimning
- * @create: 2021-04-18 23:13
+ * @create: 2021-04-19 14:53
  **/
 @Data
-public class DeviceMessage {
-    private String message_id;
-    private String name;
-    private Message message;
-    private String topic;
+public class MessageResult {
     private String status;
     private String created_time;
     private String finished_time;
