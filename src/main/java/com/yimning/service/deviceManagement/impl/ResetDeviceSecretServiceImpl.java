@@ -20,9 +20,9 @@ public class ResetDeviceSecretServiceImpl implements ResetDeviceSecretService {
 
     @Override
     public ResetDeviceSecretResponse resetDeviceSecret(ResetDeviceSecret resetDeviceSecret) throws Exception {
-        String token = Authentication.getToken();
         ResetDeviceSecretResponse resetDeviceSecretResponse = new ResetDeviceSecretResponse();
         HttpResponseResult httpResponseResult = new HttpResponseResult();
+        String token = Authentication.getToken();
         Map<String, String> headers = new HashMap<String, String>();
         headers.put("Content-Type", Constant.Content_Type);
         headers.put("X-Auth-Token", token);

@@ -165,6 +165,13 @@ public class Constant {
     public static final String CREATE_ISSUE_ASYNC_DEVICE_COMMAND = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/async-commands";
     public static final String QUERY_DEVICE_ASYNC_COMMAND_BY_COMMANDID = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/async-commands/%s";
 
+    /*
+     * Device Properties :
+     * 1. QUERY_DEVICE_PROPERTIES_LIST
+     * 2. QUERY_DEVICE_PROPERTIES
+     */
+    public static final String QUERY_DEVICE_PROPERTIES_LIST = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/properties";
+    public static final String QUERY_DEVICE_PROPERTIES = IOTDM_BASE_URL + "/v5/iot/%s/devices/%s/properties";
 
 
 
