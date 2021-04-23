@@ -42,6 +42,7 @@ public class TestServiceImpl {
 
         /** 
          * 取两个字符之间的字符串 
+         * 正则表达式
          */
         String filetext = "{\"data\": \"demoData\",\"test\": \"demoData\",\"name\":\"demoData1\",\"topic\":null,\"status\":\"DELIVERED\"}";
         String filetext1 = filetext.replaceAll(",", "");
