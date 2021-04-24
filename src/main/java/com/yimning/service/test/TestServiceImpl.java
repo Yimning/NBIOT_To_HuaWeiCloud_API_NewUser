@@ -56,7 +56,7 @@ public class TestServiceImpl {
 
         filetext = filetext.replaceAll(" ", "");
         String filetext2 = filetext.replaceAll(",", "");
-        Pattern p = Pattern.compile("\\\"(.*?)\"\\:(.*?)");//正则表达式，取=和|之间的字符串，不包括=和|
+        Pattern p = Pattern.compile("\\\"(.*?)\"\\:(.*?)");//正则表达式
         System.out.println("----" + filetext2);//m.group(1)不包括这两个字符
         Matcher m1 = p.matcher(filetext2);
         while (m1.find()) {
