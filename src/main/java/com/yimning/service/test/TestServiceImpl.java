@@ -60,6 +60,7 @@ public class TestServiceImpl {
         System.out.println("----" + filetext2);//m.group(1)不包括这两个字符
         Matcher m1 = p.matcher(filetext2);
         while (m1.find()) {
+
             //System.out.println(m1.group(0));//m.group(1)不包括这两个字符
             System.out.println(m1.group(1));//m.group(1)不包括这两个字符
             //System.out.println(m1.group(2));//m.group(1)不包括这两个字符
